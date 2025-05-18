@@ -18,6 +18,23 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: '0',
+    title: 'iYun盘',
+    description: 'iYun盘盘是一个简单易用的资源分享和整合工具，帮助您快速发现、收藏和获取各类网盘资源。。',
+    icon: 'https://antzuhl-file.oss-cn-beijing.aliyuncs.com/app_list/show/logo.png',
+    image: [
+      'https://antzuhl-file.oss-cn-beijing.aliyuncs.com/app_list/show/WechatIMG23.jpg',
+      'https://antzuhl-file.oss-cn-beijing.aliyuncs.com/app_list/show/WechatIMG22.jpg'
+    ],
+    category: 'app',
+    technologies: ['云盘', '工具', 'iOS', 'AI生成'],
+    liveUrl: '',
+    githubUrl: '',
+    featured: true,
+    status: '审核中',
+    date: '2025/05'
+  },
+  {
     id: '1',
     title: '真相配方',
     description: '通过扫描自动识别包装带上的添加剂信息，根据添加剂安全级别提示，为您提供安全饮食生活。',
@@ -33,7 +50,7 @@ export const projects: Project[] = [
     liveUrl: '',
     githubUrl: '',
     featured: true,
-    status: '审核中',
+    status: '已上架',
     date: '2025/05'
   },
   {
@@ -50,7 +67,7 @@ export const projects: Project[] = [
     technologies: ['生活', '药品', 'iOS', 'AI生成'],
     liveUrl: '',
     githubUrl: '',
-    status: '审核中',
+    status: '已上架',
     date: '2025/05'
   },
   {
@@ -84,7 +101,7 @@ export const projects: Project[] = [
     technologies: ['工具', 'iOS', 'AI生成'],
     liveUrl: '',
     githubUrl: '',
-    status: '审核中',
+    status: '已上架',
     date: '2025/05'
   },
   {
