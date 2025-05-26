@@ -334,12 +334,10 @@ const MobileAppCard: React.FC<{ project: typeof projects[0] }> = ({ project }) =
       {/* Modal for enlarged image view */}
       {isModalOpen && (
         <div 
-          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
-          onClick={() => setIsModalOpen(false)}
+          className="fixed inset-0 bg-black/80 z-50 flex flex-col items-center justify-center p-4"
         >
           <div 
-            className="relative max-w-4xl max-h-[90vh] w-full flex items-center justify-center"
-            onClick={(e) => e.stopPropagation()}
+            className="relative max-w-4xl max-h-[80vh] w-full flex items-center justify-center"
           >
             {/* Close button */}
             <motion.button
@@ -360,7 +358,7 @@ const MobileAppCard: React.FC<{ project: typeof projects[0] }> = ({ project }) =
                 <img 
                   src={images[activeIndex]} 
                   alt={`${project.title} screenshot ${activeIndex + 1}`}
-                  className="max-h-[80vh] w-auto mx-auto"
+                  className="max-h-[70vh] w-auto mx-auto"
                 />
               </div>
             </div>
@@ -407,6 +405,22 @@ const MobileAppCard: React.FC<{ project: typeof projects[0] }> = ({ project }) =
               </>
             )}
           </div>
+          
+          {/* Close area at the bottom */}
+          <motion.div 
+            className="mt-6 cursor-pointer flex flex-col items-center space-y-2"
+            onClick={() => setIsModalOpen(false)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <div className="flex items-center justify-center w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-sm border border-white/20 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                <path d="M18 6L6 18"/>
+                <path d="M6 6l12 12"/>
+              </svg>
+            </div>
+            <span className="text-white/70 text-sm">点击关闭</span>
+          </motion.div>
         </div>
       )}
     </>

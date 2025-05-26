@@ -18,9 +18,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: '15',
+    title: '预设大师',
+    description: '免费无广告、超多照片美化参数，并且支持保存自定义预设参数。',
+    icon: 'https://antzuhl-file.oss-cn-beijing.aliyuncs.com/app_list/img/ysds.png',
+    image: [
+      'https://antzuhl-file.oss-cn-beijing.aliyuncs.com/app_list/img/ysds/WechatIMG51.jpg',
+      'https://antzuhl-file.oss-cn-beijing.aliyuncs.com/app_list/img/ysds/WechatIMG49.jpg',
+      'https://antzuhl-file.oss-cn-beijing.aliyuncs.com/app_list/img/ysds/WechatIMG53.jpg',
+      'https://antzuhl-file.oss-cn-beijing.aliyuncs.com/app_list/img/ysds/WechatIMG50.jpg'
+    ],
+    category: 'app',
+    technologies: ['工具', '照片', '滤镜', 'iOS', 'AI生成'],
+    liveUrl: '',
+    githubUrl: '',
+    status: '已上线',
+    date: '2025/05'
+  },
+  {
     id: '0',
     title: 'iYun盘',
-    description: 'iYun盘盘是一个简单易用的资源分享和整合工具，帮助您快速发现、收藏和获取各类网盘资源。。',
+    description: 'iYun盘盘是一个简单易用的资源分享和整合工具，帮助您快速发现、收藏和获取各类网盘资源。',
     icon: 'https://antzuhl-file.oss-cn-beijing.aliyuncs.com/app_list/show/logo.png',
     image: [
       'https://antzuhl-file.oss-cn-beijing.aliyuncs.com/app_list/show/WechatIMG23.jpg',
@@ -31,7 +49,7 @@ export const projects: Project[] = [
     liveUrl: '',
     githubUrl: '',
     featured: true,
-    status: '审核中',
+    status: '已上架',
     date: '2025/05'
   },
   {
@@ -84,7 +102,7 @@ export const projects: Project[] = [
     technologies: ['BTC', '合约', 'iOS', 'AI生成'],
     liveUrl: '',
     githubUrl: '',
-    status: '审核中, 内容敏感已经被拒了一次',
+    status: '已上架',
     date: '2024/12'
   },
   {
